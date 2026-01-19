@@ -7,14 +7,49 @@ body {
 }
 
 header {
+    background-color: #fff;
+    padding: 40px 0 20px 0; /* Espacio arriba y abajo del nombre */
     text-align: center;
-    padding: 50px 20px;
-    background: white;
 }
 
-h1 {
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
     letter-spacing: 5px;
     text-transform: uppercase;
+}
+
+* Barra de Navegación */
+.navbar {
+    background-color: #fff;
+    border-top: 1px solid #eee;    /* Una línea sutil arriba */
+    border-bottom: 1px solid #eee; /* Una línea sutil abajo */
+    padding: 15px 0;
+    position: sticky;              /* Se quedará pegada arriba al bajar */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;       /* Esto centra los enlaces */
+    gap: 30px;                     /* Espacio entre botones */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e1306c;
 }
 
 /* Galería de Arte */
