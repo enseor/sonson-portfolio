@@ -53,50 +53,51 @@ header h1 {
     color: #e1306c;
 }
 
-/* --- SECCIÓN PORTADA (OBRA PRINCIPAL) --- */
+/* --- OBRA PRINCIPAL (Portada) --- */
 .hero-work {
-    height: calc(100vh - 160px); /* Ocupa casi toda la pantalla */
+    height: 60vh; /* Bajamos la altura al 60% de la pantalla */
     width: 100%;
-    overflow: hidden;
-    background: #000; /* Fondo negro por si la imagen no carga */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #f8f8f8;
 }
 
 .main-piece {
-    width: 100%;
-    height: 100%;
+    height: 100%; /* El contenedor manda sobre la altura */
+    display: flex;
+    justify-content: center;
 }
 
 .main-piece img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Clave para que llene la pantalla */
-    transition: transform 0.5s ease;
+    height: 100%;    /* Forzamos a que no pase de la altura del contenedor */
+    width: auto;      /* Que el ancho se ajuste solo para no deformar */
+    max-width: 90vw;  /* Evitamos que toque los bordes en móviles */
+    object-fit: contain; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-radius: 4px;
 }
 
-/* --- REJILLA DE OBRAS SECUNDARIAS (PEQUEÑAS) --- */
+/* --- REJILLA DE OBRAS (Miniaturas) --- */
 .works-grid {
     display: grid;
-    /* Ajustado para que sean pequeñas (min 180px) */
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
     padding: 40px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.works-grid .art-card {
-    background: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .works-grid .art-card img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Cuadradas */
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease;
+    height: auto;       /* Altura automática según la foto */
+    aspect-ratio: auto; /* Quitamos el 1/1 para que no sean cuadradas */
+    object-fit: contain; /* Respeta la proporción original de cada cuadro */
+    border-radius: 0;   /* Las obras de arte suelen lucir mejor con esquinas rectas */
+}
+
+.works-grid .art-card {
+    background: transparent; /* Quitamos el fondo blanco de la tarjeta */
+    box-shadow: none;        /* Quitamos la sombra de la tarjeta para un look más limpio */
 }
 
 .works-grid .art-card:hover img {
