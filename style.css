@@ -1,0 +1,95 @@
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* Galería de Arte */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.art-card {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.art-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.art-card:hover img {
+    transform: scale(1.05);
+}
+
+.info {
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Sección de redes antes del footer */
+.social-footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f0f0f0; /* Un gris muy clarito para diferenciarlo */
+    border-top: 1px solid #ddd;
+}
+
+.social-footer p {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+.social-links a {
+    font-size: 30px; /* Un poco más grandes para que se vean bien */
+    margin: 0 20px;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #e1306c; /* Color Instagram */
+    transform: translateY(-5px); /* Pequeño salto al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 0.8em;
+}
