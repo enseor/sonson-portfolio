@@ -15,31 +15,83 @@
 
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#Biografía">Biografía</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrarGaleria()">Galería</a></li>
+            <li><a href="#biografia">Biografía</a></li>
         </ul>
     </nav>
 
-    <main class="gallery">
-        <div class="art-card">
-            <img src="galeria/obra-principal.jpg" alt="Nombre de la obra">
-            <div class="info">
-                <h3>Título de la Obra 1</h3>
+    <main class="content">
+        <section class="hero-work">
+            <div class="art-card main-piece">
+                <img src="galeria/obra-principal.jpg" alt="Obra Principal">
+                <div class="info"><h3>Obra Principal</h3></div>
+            </div>
+        </section>
+
+        <div id="obras-secundarias" class="works-grid hidden">
+            <div class="art-card">
+                <img src="galeria/obra1.jpg" alt="Obra 1">
+                <div class="info"><h3>Obra 1</h3></div>
+            </div>
+            <div class="art-card">
+                <img src="galeria/obra2.jpg" alt="Obra 2">
+                <div class="info"><h3>Obra 2</h3></div>
+            </div>
+            <div class="art-card">
+                <img src="galeria/obra3.jpg" alt="Obra 3">
+                <div class="info"><h3>Obra 3</h3></div>
+            </div>
+            <div class="art-card">
+                <img src="galeria/obra4.jpg" alt="Obra 4">
+                <div class="info"><h3>Obra 4</h3></div>
+            </div>
+            <div class="art-card">
+                <img src="galeria/obra5.jpg" alt="Obra 5">
+                <div class="info"><h3>Obra 5</h3></div>
+            </div>
+            <div class="art-card">
+                <img src="galeria/obra6.jpg" alt="Obra 6">
+                <div class="info"><h3>Obra 6</h3></div>
+            </div>
+            <div class="art-card">
+                <img src="galeria/obra7.jpg" alt="Obra 7">
+                <div class="info"><h3>Obra 7</h3></div>
+            </div>
+            <div class="art-card">
+                <img src="galeria/obra8.jpg" alt="Obra 8">
+                <div class="info"><h3>Obra 8</h3></div>
+            </div>
+            <div class="art-card">
+                <img src="galeria/obra9.jpg" alt="Obra 9">
+                <div class="info"><h3>Obra 9</h3></div>
             </div>
         </div>
-
     </main>
 
-    <section class="social-footer">
+    <section id="biografia" class="social-footer">
         <div class="social-links">
             <a href="https://instagram.com/alvarosonson/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="alvarosonson@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
+            <a href="mailto:alvarosonson@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </section>
 
     <footer>
         <p>Copyright &copy; 2026 Alvaro Sonson - Todos los derechos reservados</p>
     </footer>
+
+    <script>
+    function mostrarGaleria() {
+        var galeria = document.getElementById("obras-secundarias");
+        
+        if (galeria.classList.contains("hidden")) {
+            galeria.classList.remove("hidden");
+            // Esperamos un milisegundo para que el navegador registre el cambio y haga el scroll
+            setTimeout(function() {
+                galeria.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    }
+    </script>
 
 </body>
 </html>
