@@ -105,6 +105,27 @@ header h1 {
     transform: scale(1.03);
 }
 
+.info {
+    padding: 15px 5px;
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 0.95rem;      /* Tamaño del título */
+    font-weight: 600;
+    margin: 0 0 5px 0;       /* Espacio pequeño debajo del título */
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info .dimensions {
+    font-size: 0.8rem;       /* Tamaño más pequeño para las medidas */
+    color: #888;             /* Color gris más suave */
+    margin: 0;
+    font-style: italic;      /* Un toque elegante para las medidas */
+}
+
 /* --- SECCIÓN BIOGRAFÍA --- */
 .bio-container {
     max-width: 800px; /* Texto más estrecho para facilitar la lectura */
