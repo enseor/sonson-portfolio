@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-color: #f8f8f8;
     color: #333;
-    scroll-behavior: smooth; /* Para que al pulsar "Galería" baje suavemente */
+    scroll-behavior: smooth;
 }
 
 header {
@@ -49,37 +49,44 @@ header h1 {
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+/* Estilo para saber en qué página estamos */
+.nav-links a:hover, .nav-links a.active {
     color: #e1306c;
 }
 
-/* --- OBRA PRINCIPAL (Portada) --- */
+/* --- CONTENIDO PRINCIPAL --- */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 70vh; /* Asegura que el footer no suba demasiado en páginas vacías */
+}
+
+/* --- OBRA PRINCIPAL (Index) --- */
 .hero-work {
-    height: 60vh; /* Bajamos la altura al 60% de la pantalla */
+    height: auto;           /* Cambiamos de 60vh a auto para que no empuje todo */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 50px 0;        /* Espaciado arriba y abajo */
     background-color: #f8f8f8;
 }
 
 .main-piece {
-    height: 100%; /* El contenedor manda sobre la altura */
-    display: flex;
-    justify-content: center;
+    max-width: 600px;       /* Limitamos el ancho máximo de la imagen */
+    width: 90%;             /* Para que sea responsiva en móviles */
+    margin: 0 auto;
 }
 
 .main-piece img {
-    height: 100%;    /* Forzamos a que no pase de la altura del contenedor */
-    width: auto;      /* Que el ancho se ajuste solo para no deformar */
-    max-width: 90vw;  /* Evitamos que toque los bordes en móviles */
-    object-fit: contain; 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    width: 100%;            /* La imagen ocupa el ancho del contenedor (600px) */
+    height: auto;           /* La altura se ajusta sola proporcionalmente */
+    display: block;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     border-radius: 4px;
 }
 
-/* --- REJILLA DE OBRAS (Miniaturas) --- */
+/* --- REJILLA DE OBRAS (Galería) --- */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -87,46 +94,37 @@ header h1 {
     padding: 40px 20px;
 }
 
-.works-grid .art-card img {
+.art-card img {
     width: 100%;
-    height: auto;       /* Altura automática según la foto */
-    aspect-ratio: auto; /* Quitamos el 1/1 para que no sean cuadradas */
-    object-fit: contain; /* Respeta la proporción original de cada cuadro */
-    border-radius: 0;   /* Las obras de arte suelen lucir mejor con esquinas rectas */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
 }
 
-.works-grid .art-card {
-    background: transparent; /* Quitamos el fondo blanco de la tarjeta */
-    box-shadow: none;        /* Quitamos la sombra de la tarjeta para un look más limpio */
+.art-card:hover img {
+    transform: scale(1.03);
 }
 
-.works-grid .art-card:hover img {
-    transform: scale(1.05);
-}
-
-.info {
-    padding: 10px;
+/* --- SECCIÓN BIOGRAFÍA --- */
+.bio-container {
+    max-width: 800px; /* Texto más estrecho para facilitar la lectura */
+    padding: 60px 20px;
     text-align: center;
+    line-height: 1.8;
 }
 
-.info h3 {
-    font-size: 0.8rem;
-    margin: 0;
-    color: #666;
-}
-
-/* Clases de utilidad */
-.hidden {
-    display: none !important;
+.bio-text {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #444;
 }
 
 /* Footer y Redes */
 .social-footer {
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 0;
     background-color: #fff;
     border-top: 1px solid #eee;
-    margin-top: 50px;
 }
 
 .social-links a {
@@ -147,4 +145,5 @@ footer {
     padding: 20px;
     color: #999;
     font-size: 0.75rem;
+    background: #fff;
 }
