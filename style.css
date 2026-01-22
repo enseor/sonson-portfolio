@@ -20,6 +20,28 @@ header h1 {
     text-transform: uppercase;
 }
 
+/* header */
+.main-header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+    align-items: center;
+}
+
+.logo {
+    max-width: 300px; /* Ajusta este valor al tamaño que desees */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    display: block;
+}
+
+/* Opcional: Para que en móviles se vea un poco más pequeño */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 200px;
+    }
+}
+
 /* Barra de Navegación */
 .navbar {
     background-color: #fff;
