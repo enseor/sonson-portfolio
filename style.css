@@ -25,13 +25,13 @@ header h1 {
     width: 100%;
     padding: 20px 0;
     display: flex;
-    justify-content: center; /* Centra el logo horizontalmente */
+    justify-content: center;
     align-items: center;
 }
 
 .logo {
-    max-width: 300px; /* Ajusta este valor al tamaño que desees */
-    height: auto;     /* Mantiene la proporción de la imagen */
+    max-width: 300px;
+    height: auto;
     display: block;
 }
 
@@ -80,29 +80,29 @@ header h1 {
 .content {
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 70vh; /* Asegura que el footer no suba demasiado en páginas vacías */
+    min-height: 70vh;
 }
 
 /* --- OBRA PRINCIPAL (Index) --- */
 .hero-work {
-    height: auto;           /* Cambiamos de 60vh a auto para que no empuje todo */
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;        /* Espaciado arriba y abajo */
+    padding: 50px 0;
     background-color: #f8f8f8;
 }
 
 .main-piece {
-    max-width: 600px;       /* Limitamos el ancho máximo de la imagen */
-    width: 90%;             /* Para que sea responsiva en móviles */
+    max-width: 600px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .main-piece img {
-    width: 100%;            /* La imagen ocupa el ancho del contenedor (600px) */
-    height: auto;           /* La altura se ajusta sola proporcionalmente */
+    width: 100%;
+    height: auto;
     display: block;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     border-radius: 4px;
@@ -133,24 +133,24 @@ header h1 {
 }
 
 .info h3 {
-    font-size: 0.95rem;      /* Tamaño del título */
+    font-size: 0.95rem;
     font-weight: 600;
-    margin: 0 0 5px 0;       /* Espacio pequeño debajo del título */
+    margin: 0 0 5px 0;
     color: #111;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .info .dimensions {
-    font-size: 0.8rem;       /* Tamaño más pequeño para las medidas */
-    color: #888;             /* Color gris más suave */
+    font-size: 0.8rem;
+    color: #888;
     margin: 0;
-    font-style: italic;      /* Un toque elegante para las medidas */
+    font-style: italic;
 }
 
 /* --- SECCIÓN BIOGRAFÍA --- */
 .bio-container {
-    max-width: 800px; /* Texto más estrecho para facilitar la lectura */
+    max-width: 800px;
     padding: 60px 20px;
     text-align: center;
     line-height: 1.8;
@@ -177,8 +177,8 @@ header h1 {
 }
 
 .bio-images-row img {
-    width: calc(50% - 10px); /* Ocupan la mitad cada una menos el gap */
-    max-width: 400px;        /* Para que no se hagan gigantes en monitores muy grandes */
+    width: calc(50% - 10px);
+    max-width: 400px;
     height: auto;
     object-fit: cover;
     border-radius: 2px;
@@ -196,7 +196,7 @@ header h1 {
 .curriculum ul {
     list-style: none;
     padding: 0;
-    text-align: left; /* El texto del CV suele leerse mejor alineado a la izquierda */
+    text-align: left;
 }
 
 .curriculum li {
@@ -268,4 +268,35 @@ footer {
     color: #999;
     font-size: 0.75rem;
     background: #fff;
+}
+
+/* Detalles de contacto */
+.contact-details {
+    margin-top: 60px;
+    padding: 30px;
+    border-top: 1px solid #eee;
+    line-height: 1.8; /* Espaciado cómodo entre líneas */
+    color: #333;
+}
+
+.contact-details h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+.contact-details a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #888; /* Color gris suave al pasar el ratón */
+    text-decoration: underline;
 }
