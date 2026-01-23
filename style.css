@@ -1,48 +1,41 @@
-/* Configuración General */
+/* --- 1. CONFIGURACIÓN GENERAL --- */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Avenir Next', 'Avenir', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     background-color: #f8f8f8;
     color: #333;
     scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #fff;
-    padding: 40px 0 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-/* header */
+/* --- HEADER Y LOGO --- */
 .main-header {
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 
 .logo {
     max-width: 300px;
     height: auto;
     display: block;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* Opcional: Para que en móviles se vea un poco más pequeño */
+.logo:hover {
+    transform: scale(1.02);
+}
+
 @media (max-width: 600px) {
     .logo {
         max-width: 200px;
     }
 }
 
-/* Barra de Navegación */
+/* --- 3. NAVEGACIÓN --- */
 .navbar {
     background-color: #fff;
     border-top: 1px solid #eee;
@@ -68,30 +61,27 @@ header h1 {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.9rem;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
-/* Estilo para saber en qué página estamos */
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover, 
+.nav-links a.active {
     color: #e1306c;
 }
 
-/* --- CONTENIDO PRINCIPAL --- */
+/* --- 4. CONTENIDO PRINCIPAL --- */
 .content {
     max-width: 1200px;
     margin: 0 auto;
     min-height: 70vh;
 }
 
-/* --- OBRA PRINCIPAL (Index) --- */
+/* Sección de la obra destacada (Index) */
 .hero-work {
-    height: auto;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    background-color: #f8f8f8;
 }
 
 .main-piece {
@@ -108,7 +98,40 @@ header h1 {
     border-radius: 4px;
 }
 
-/* --- REJILLA DE OBRAS (Galería) --- */
+/************/
+/*  FOOTER  */
+/************/
+.social-footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.social-links a {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #e1306c;
+    transform: translateY(-3px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 0.75rem;
+    background: #fff;
+}
+
+/*******************/
+/*     GALERÍA     */
+/*******************/
 .works-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -148,7 +171,9 @@ header h1 {
     font-style: italic;
 }
 
-/* --- SECCIÓN BIOGRAFÍA --- */
+/*******************/
+/*    BIOGRAFÍA    */
+/*******************/
 .bio-container {
     max-width: 800px;
     padding: 60px 20px;
@@ -239,35 +264,6 @@ header h1 {
     .bio-images-row img {
         width: 100%;
     }
-}
-
-/* Footer y Redes */
-.social-footer {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #fff;
-    border-top: 1px solid #eee;
-}
-
-.social-links a {
-    font-size: 24px;
-    margin: 0 15px;
-    color: #333;
-    transition: color 0.3s, transform 0.3s;
-    display: inline-block;
-}
-
-.social-links a:hover {
-    color: #e1306c;
-    transform: translateY(-3px);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #999;
-    font-size: 0.75rem;
-    background: #fff;
 }
 
 /* Detalles de contacto */
