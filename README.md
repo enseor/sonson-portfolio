@@ -1,6 +1,6 @@
-# 🎨 Álvaro Sonson | Artistic Portfolio
+# 🎨 Álvaro Sonson | Portfolio Artístico
 
-Este es un sitio web minimalista diseñado desde cero con **HTML5** y **CSS3** para exhibir la obra y trayectoria profesional del artista contemporáneo **Álvaro Sonson**. 
+Este es un sitio web minimalista diseñado desde cero con **HTML5**, **CSS3** y **JavaScript** para exhibir la obra y trayectoria profesional del artista contemporáneo **Álvaro Sonson**. 
 
 El diseño se centra en la limpieza visual y una estética editorial, asegurando que el arte sea el único protagonista.
 
@@ -10,9 +10,9 @@ Puedes visitar la web aquí:
 
 ---
 
-## 🎨 Project Overview
+# 🎨 Álvaro Sonson | Artistic Portfolio
 
-A minimalist website built from scratch using **HTML5** and **CSS3** to showcase the artwork and professional trajectory of contemporary artist **Álvaro Sonson**.
+A minimalist website built from scratch using **HTML5**, **CSS3** and **JavaScript** to showcase the artwork and professional trajectory of contemporary artist **Álvaro Sonson**.
 
 The design focuses on clean lines and an editorial feel to ensure the art remains the protagonist.
 
