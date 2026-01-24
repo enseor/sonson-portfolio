@@ -221,6 +221,11 @@ footer {
     line-height: 1.5;
 }
 
+.press-title {
+    color: #e1306c !important; /* El color exacto que pediste */
+    border-bottom-color: #e1306c !important; /* Opcional: hace que la línea de abajo también sea rosa */
+}
+
 /* Estilos para el listado de estudios y expos */
 .curriculum h2 {
     margin-top: 50px;
@@ -276,6 +281,35 @@ footer {
     .bio-images-row img {
         width: 100%;
     }
+}
+
+.cv-download-container {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid #333; /* Estilo minimalista con borde */
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-download i {
+    margin-right: 8px;
+}
+
+.btn-download:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* Detalles de contacto */
