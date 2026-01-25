@@ -1,8 +1,8 @@
-/* --- 1. CONFIGURACIÓN GENERAL --- */
+/* --- CONFIGURACIÓN GENERAL --- */
 body {
     font-family: 'Avenir Next', 'Avenir', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
-    background-color: #f8f8f8;
+    background-color: #fff;
     color: #333;
     scroll-behavior: smooth;
     line-height: 1.6;
@@ -35,7 +35,7 @@ body {
     }
 }
 
-/* --- 3. NAVEGACIÓN --- */
+/* --- NAVEGACIÓN --- */
 .navbar {
     background-color: #fff;
     border-top: 1px solid #eee;
@@ -98,9 +98,9 @@ body {
     border-radius: 4px;
 }
 
-/************/
-/*  FOOTER  */
-/************/
+/***********************************/
+/*              FOOTER             */
+/***********************************/
 .social-footer {
     text-align: center;
     padding: 40px 0;
@@ -129,9 +129,9 @@ footer {
     background: #fff;
 }
 
-/*******************/
-/*     GALERÍA     */
-/*******************/
+/***********************************/
+/*             GALERÍA             */
+/***********************************/
 .works-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -198,9 +198,9 @@ footer {
     to { opacity: 1; transform: scale(1); }
 }
 
-/*******************/
-/*    BIOGRAFÍA    */
-/*******************/
+/***********************************/
+/*             BIOGRAFÍA           */
+/***********************************/
 .bio-container {
     max-width: 800px;
     padding: 60px 20px;
@@ -249,11 +249,10 @@ footer {
 }
 
 .press-title {
-    color: #e1306c !important; /* El color exacto que pediste */
-    border-bottom-color: #e1306c !important; /* Opcional: hace que la línea de abajo también sea rosa */
+    color: #e1306c !important;
+    border-bottom-color: #e1306c !important;
 }
 
-/* Estilos para el listado de estudios y expos */
 .curriculum h2 {
     margin-top: 50px;
     font-size: 1.3rem;
@@ -282,11 +281,10 @@ footer {
     font-weight: bold;
 }
 
-/* Contenedor de imágenes horizontales (una encima de otra) */
 .full-width-images {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Espacio entre las dos fotos */
+    gap: 30px;
     margin: 50px 0;
     width: 100%;
 }
@@ -299,7 +297,6 @@ footer {
     border-radius: 2px;
 }
 
-/* Ajuste móvil para las 2 fotos */
 @media (max-width: 600px) {
     .bio-images-row {
         flex-direction: column;
@@ -318,7 +315,7 @@ footer {
 .btn-download {
     display: inline-block;
     padding: 12px 30px;
-    border: 1px solid #333; /* Estilo minimalista con borde */
+    border: 1px solid #333;
     color: #333;
     text-decoration: none;
     text-transform: uppercase;
@@ -339,12 +336,11 @@ footer {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Detalles de contacto */
 .contact-details {
     margin-top: 60px;
     padding: 30px;
     border-top: 1px solid #eee;
-    line-height: 1.8; /* Espaciado cómodo entre líneas */
+    line-height: 1.8;
     color: #333;
 }
 
@@ -366,6 +362,6 @@ footer {
 }
 
 .contact-details a:hover {
-    color: #888; /* Color gris suave al pasar el ratón */
+    color: #888;
     text-decoration: underline;
 }
