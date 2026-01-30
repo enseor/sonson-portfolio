@@ -66,7 +66,7 @@ body {
 
 .nav-links a:hover, 
 .nav-links a.active {
-    color: #e1306c;
+    color: #751523;
 }
 
 /* --- CONTENIDO PRINCIPAL --- */
@@ -117,7 +117,7 @@ body {
 }
 
 .social-links a:hover {
-    color: #e1306c;
+    color: #751523;
     transform: translateY(-3px);
 }
 
@@ -159,7 +159,7 @@ footer {
     font-size: 0.95rem;
     font-weight: 600;
     margin: 0 0 5px 0;
-    color: #111;
+    color: #751523;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -240,7 +240,7 @@ footer {
 
 .highlight-text {
     text-align: justify;
-    color: #800020; 
+    color: #751523; 
     font-weight: bold;
     font-size: 1.15rem;
     margin: 25px auto;
@@ -249,8 +249,8 @@ footer {
 }
 
 .press-title {
-    color: #e1306c !important;
-    border-bottom-color: #e1306c !important;
+    color: #751523 !important;
+    border-bottom-color: #751523 !important;
 }
 
 .curriculum h2 {
@@ -277,7 +277,7 @@ footer {
     content: "•";
     position: absolute;
     left: 0;
-    color: #e1306c;
+    color: #751523;
     font-weight: bold;
 }
 
